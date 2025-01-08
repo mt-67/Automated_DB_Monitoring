@@ -53,7 +53,7 @@ def check_availab():
         return False
     
 
-'''Collecting all metrics'''
+'''collecting all metrics'''
 def all_metrics():
 
     metrics = {'memory_usage': memory_usage(),
@@ -61,3 +61,16 @@ def all_metrics():
                'query_execution_time': execution_time(),
                'database_available': check_availab()}
     return metrics
+
+
+'''sending metrics to elasticsearch'''
+def send_metrics(metrics):
+
+    url = 'http://localhost:9200/metrics/_doc/'  # replace elasticsearch with your URL
+    headers = {'Content-Type': 'application/json'}
+    response = requests.post(url, json=metrics, headers=headers)
+    
+    if response.status_code == 201:
+        print("metrics sent to elasticsearch")
+    else:
+        print(f"error when sending metrics: {response.status_code}, {response.text}")
