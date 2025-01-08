@@ -21,3 +21,21 @@ def memory_usage():
 def cpu_usage():
 
     return psutil.cpu_percent(interval=1)
+
+
+'''query execution time'''
+def execution_time():
+    
+    conn = psycopg2.connect(dbname="Aero", user="user_name",
+                            password="password", host="localhost")
+    cursor = conn.cursor()
+
+    start_time = time.time()
+
+    cursor.execute("SELECT * FROM company, pass_in_trip, passenger, trip;") # or any of your other requests 
+    cursor.fetchall()
+
+    end_time = time.time()
+    
+    conn.close()
+    return end_time - start_time
