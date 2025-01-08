@@ -15,3 +15,9 @@ def memory_usage():
     memory_use = cursor.fetchone()[0]
     conn.close()
     return memory_use
+
+
+'''CPU load'''
+def cpu_usage():
+
+    return psutil.cpu_percent(interval=1)
