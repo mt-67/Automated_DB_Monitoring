@@ -74,3 +74,10 @@ def send_metrics(metrics):
         print("metrics sent to elasticsearch")
     else:
         print(f"error when sending metrics: {response.status_code}, {response.text}")
+
+
+if __name__ == "__main__":
+    metrics = all_metrics()
+    print(metrics) 
+
+    send_metrics(metrics)  # sending metrics to elasticsearch
