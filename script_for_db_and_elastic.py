@@ -39,3 +39,15 @@ def execution_time():
     
     conn.close()
     return end_time - start_time
+
+
+'''database availability'''
+def check_availab():
+    try:
+        conn = psycopg2.connect(dbname="Aero", user="user_name",
+                                password="password", host="localhost")
+        conn.close()
+        return True
+    
+    except psycopg2.OperationalError:
+        return False
