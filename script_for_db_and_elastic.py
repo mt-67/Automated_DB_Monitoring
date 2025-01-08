@@ -51,3 +51,13 @@ def check_availab():
     
     except psycopg2.OperationalError:
         return False
+    
+
+'''Collecting all metrics'''
+def all_metrics():
+
+    metrics = {'memory_usage': memory_usage(),
+               'cpu_usage': cpu_usage(),
+               'query_execution_time': execution_time(),
+               'database_available': check_availab()}
+    return metrics
