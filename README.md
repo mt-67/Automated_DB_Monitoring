@@ -21,6 +21,9 @@ The purpose of this system is
 
 # Technologies
 
+# Instruction
+```Bash
+systemctl status postgresql
+```
 # The project team
 
-# Instruction
