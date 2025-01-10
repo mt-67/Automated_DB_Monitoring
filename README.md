@@ -21,6 +21,7 @@ The purpose of this system is
 - [Instruction](#Instruction)
 - [The project team](#The_project_team)
 
+
 # Technologies
 
 - [PostgreSQL](#PostgreSQL)
@@ -33,6 +34,7 @@ The purpose of this system is
 - [Groovy](#Groovy)
 - [Bash](#Bash)
 - [Ubuntu](#Ubuntu)
+
 
 # Instruction
 
@@ -197,7 +199,12 @@ You need to install Cassandra through a virtual machine on Ubuntu.
 
 Cassandra will store the logs of our database, for this we have written a python script « cassandra_storing_logs.py »
 
+
 # AWS Lambda
+
+Install the AWS CLI in the console.
+
+I wrote the script « aws_lambda.py » AWS Lambda function in Python for responding to events in PostgreSQL and has set up triggers for calling the function.
 
 
 # The project team
