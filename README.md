@@ -121,7 +121,7 @@ Algorithm of actions :
 
 Run Kibana and Elasticsearch from their files in the console.
 
-After launch, you will be able to access the Kibana interface via at http://localhost:5601 .
+After launch, you will be able to access the Kibana interface via at http://localhost:5601 
 
 
 
