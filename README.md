@@ -76,5 +76,5 @@ Restart the PostgreSQL server
 Open the file in the vim text editor
 # The project team
 
-- Matsvei Asipenka — DevOps engineer  
+- Matsvei Asipenka — DevOps engineer   https://github.com/mt-67/Automated_DB_Monitoring.git
 
