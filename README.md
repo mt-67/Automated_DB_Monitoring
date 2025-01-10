@@ -171,7 +171,7 @@ Customization
 
 Long-range algorithm for automatic operation of Jenkins free jobs :
 
-Create free jobs in Jenkins with the name 
+Create free jobs in Jenkins with the name
 automated-db-monitoring
 
 Description
@@ -189,6 +189,16 @@ write the code under Schedule  « H/15 * * * * »
 In the Assembly Steps
 section, write cat in the Command « script_for_db_and_elastic.py » Create free jobs in Jenkins with the name 
 « automated-db-monitoring »
+
+
+# Cassandra
+
+You need to install Cassandra through a virtual machine on Ubuntu.
+
+Cassandra will store the logs of our database, for this we have written a python script « cassandra_storing_logs.py »
+
+# AWS Lambda
+
 
 # The project team
 
