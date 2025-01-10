@@ -92,6 +92,8 @@ Now you can use pg_stat_statements to collect statistics.
 
 # Python_3.13.1
 
+The script « script_for_db_and_elastic.py » python will be able to output the collected statistics from our database and connect elasticsearch to our database.
+
 
 # The project team
 
