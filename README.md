@@ -60,9 +60,9 @@ Type Bash into the console
 systemctl status postgresql
 ```
 
-This will show the path to the data files, including « postgresql.conf »
+This will show the path to the data files, including « postgresql.conf ».
 
-Open the file in the vim text editor
+Open the file in the vim text editor.
 
 Example: 
 vim /usr/local/var/postgres/postgresql.conf
@@ -71,7 +71,7 @@ Find the shared_preload_libraries line and add pg_stat_statements
 
 shared_preload_libraries = 'pg_stat_statements’ 
    
-Save the file
+Save the file.
 
 Restart the PostgreSQL server
 ```Bash
@@ -92,8 +92,11 @@ Now you can use pg_stat_statements to collect statistics.
 
 # Python
 
-The script « script_for_db_and_elastic.py » python will be able to output the collected statistics from our database and connect elasticsearch to our database.
+In the script repository « script_for_db_and_elastic.py » python will be able to output the collected statistics from our database and connect elasticsearch to our database.
 
+In the script repository « cassandra_storing_logs.py » python, logs will be recorded in Cassandra.
+
+In the script repository « aws_lambda.py » python will respond to events in PostgreSQL and set up triggers for calling the function.
 
 # The project team
 
