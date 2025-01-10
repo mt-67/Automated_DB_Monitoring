@@ -17,7 +17,7 @@ The purpose of this system is
 
 - [Technologies](#Technologies)
 - [Instruction](#Instruction)
-- [The project team](#The_project_team)
+- [The_project_team](#The_project_team)
 
 # Technologies
 
