@@ -36,9 +36,12 @@ The purpose of this system is
 
 # PostgreSQL
 
+The databases of 5 airlines were used as a basis.
+Collecting metrics for monitoring.
+
 Customization 
 
-Install PostgreSQL. Download the database from the « Aero_pg_script.sql » file. Create an Aero database.
+Install PostgreSQL. Download the database from the file in the « Aero_pg_script.sql » repository. Create an Aero database.
 
 
 
