@@ -14,7 +14,7 @@ The purpose of this system is
 
 
 # Content
-- [Automated DataBase Monitoring](#Automated DataBase Monitoring)
+- [Automated DataBase Monitoring](#Automated_DataBase_Monitoring)
 - [Purpose](#Purpose)
 - [Content](#Content)
 - [Technologies](#Technologies)
