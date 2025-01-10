@@ -104,6 +104,92 @@ In the script repository « cassandra_storing_logs.py » python, logs will be re
 
 In the script repository « aws_lambda.py » python will respond to events in PostgreSQL and set up triggers for calling the function.
 
+
+# Elasticsearch
+
+Let's connect and configure Elasticsearch to graphically display statistics from our database. 
+
+To interact with Elasticsearch through the graphical interface, we will use Kibana, which provides a user-friendly interface for working with data in Elasticsearch. 
+
+
+Customization
+
+Algorithm of actions :
+
+
+Run Kibana and Elasticsearch from their files in the console.
+
+After launch, you will be able to access the Kibana interface via at http://localhost:5601 .
+
+
+
+To create an index in Elastic:
+
+
+Go to the "Management" section in the side menu.
+
+Select "Index Patterns" 
+
+Click on the "Create index pattern" button. 
+
+Specify the index name (for example, my-index-*) and follow the on-screen instructions.
+
+
+
+To make requests:
+
+
+Go to the "Discover" section to view the data in your index.
+
+You can use filters and search to find the information you need.
+
+
+
+To create visualizations:
+
+
+ Go to the "Visualize" section to create graphs and charts based on your data.
+
+ Select the visualization type, adjust the settings, and save the results.
+
+
+
+To create a Dashboard:
+
+
+ In the Dashboard section, you can assemble visualizations together and create interactive Dashboards for data monitoring.
+
+
+ # Jenkins
+
+Install and connect Jenkins via the console 
+
+I wrote a groovy script in the « Jenkinsfile » in the repository to activate a Python script that will be automatically triggered in Jenkins in free jobs every 15 minutes.
+
+
+Customization
+
+Long-range algorithm for automatic operation of Jenkins free jobs :
+
+Create free jobs in Jenkins with the name 
+automated-db-monitoring
+
+Description
+Takes a python script from the GitHub repository
+
+In Source Code Management
+include Git
+in the Repository URL and write https://github.com/mt-67/Automated-DB-Monitoring.git
+in Branches to build, write */main
+
+In Triggers
+enable Run periodically
+write the code under Schedule  « H/15 * * * * » 
+
+In the Assembly Steps
+section, write cat in the Command script_for_db_and_elastic.py Create free jobs in Jenkins with the name 
+« automated-db-monitoring »
+
 # The project team
 
 - Matsvei Asipenka — DevOps engineer   https://github.com/mt-67/Automated_DB_Monitoring.git
