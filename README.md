@@ -62,6 +62,8 @@ systemctl status postgresql
 
 This will show the path to the data files, including « postgresql.conf »
 
+Open the file in the vim text editor
+
 Example: 
 vim /usr/local/var/postgres/postgresql.conf
    
@@ -72,8 +74,25 @@ shared_preload_libraries = 'pg_stat_statements’
 Save the file
 
 Restart the PostgreSQL server
+```Bash
+sudo systemctl restart postgresql
+```
+After restarting the database connection, write the 
+```PostgreSQL
+CREATE EXTENSION pg_stat_statements command;
+```
 
-Open the file in the vim text editor
+Check the functionality of the extension using the command
+```PostgreSQL
+SELECT * FROM pg_stat_statements;
+```
+
+Now you can use pg_stat_statements to collect statistics.
+
+
+# Python_3.13.1
+
+
 # The project team
 
 - Matsvei Asipenka — DevOps engineer   https://github.com/mt-67/Automated_DB_Monitoring.git
