@@ -22,7 +22,7 @@ The purpose of this system is
 # Technologies
 
 - [PostgreSQL](#PostgreSQL)
-- [Python_3.13.1](#Python-3.13.1)
+- [Python-3.13.1](#Python-3.13.1)
 - [Elasticsearch](#Elasticsearch)
 - [Kibana](#Kibana)
 - [Jenkins](#Jenkins)
