@@ -74,15 +74,19 @@ shared_preload_libraries = 'pg_stat_statements’
 Save the file.
 
 Restart the PostgreSQL server
+
 ```Bash
 sudo systemctl restart postgresql
 ```
+
 After restarting the database connection, write the 
+
 ```PostgreSQL
 CREATE EXTENSION pg_stat_statements command;
 ```
 
 Check the functionality of the extension using the command
+
 ```PostgreSQL
 SELECT * FROM pg_stat_statements;
 ```
