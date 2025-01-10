@@ -179,7 +179,7 @@ Takes a python script from the GitHub repository
 
 In Source Code Management
 include Git
-in the Repository URL and write https://github.com/mt-67/Automated-DB-Monitoring.git
+in the Repository URL and write https://github.com/mt-67/Automated_DB_Monitoring.git
 in Branches to build, write */main
 
 In Triggers
@@ -187,10 +187,10 @@ enable Run periodically
 write the code under Schedule  « H/15 * * * * » 
 
 In the Assembly Steps
-section, write cat in the Command script_for_db_and_elastic.py Create free jobs in Jenkins with the name 
+section, write cat in the Command « script_for_db_and_elastic.py » Create free jobs in Jenkins with the name 
 « automated-db-monitoring »
 
 # The project team
 
-- Matsvei Asipenka — DevOps engineer   https://github.com/mt-67/Automated_DB_Monitoring.git
+- Matsvei Asipenka — DevOps engineer  https://github.com/mt-67/Automated_DB_Monitoring.git
 
