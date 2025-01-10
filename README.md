@@ -21,6 +21,17 @@ The purpose of this system is
 
 # Technologies
 
+- Cassandra
+- Python 3.13.1
+- Elasticsearch
+- Kibana
+- PostgreSQL
+- Jenkins
+- Groovy
+- AWS Lambda
+- Bash
+- Ubuntu
+
 # Instruction
 ```Bash
 systemctl status postgresql
