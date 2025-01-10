@@ -39,18 +39,42 @@ The purpose of this system is
 The databases of 5 airlines were used as a basis.
 Collecting metrics for monitoring.
 
+
 Customization 
 
 Install PostgreSQL. Download the database from the file in the « Aero_pg_script.sql » repository. Create an Aero database.
 
+Activate the pg_stat_statements extension to collect statistics.
+- RAM memory usage
+- CPU usage
+- Query execution time
+- Database availability
 
 
+The algorithm of actions for activating this extension :
 
-
-
-
+Find the location of the « postgresql.conf » file, it is located in the PostgreSQL data directory.
+   
+Type Bash into the console
 ```Bash
 systemctl status postgresql
 ```
+
+This will show the path to the data files, including « postgresql.conf »
+
+Example: 
+vim /usr/local/var/postgres/postgresql.conf
+   
+Find the shared_preload_libraries line and add pg_stat_statements
+
+shared_preload_libraries = 'pg_stat_statements’ 
+   
+Save the file
+
+Restart the PostgreSQL server
+
+Open the file in the vim text editor
 # The project team
+
+- Matsvei Asipenka — DevOps engineer  
 
